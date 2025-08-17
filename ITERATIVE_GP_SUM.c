@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <math.h>
-
-// Iterative method to calculate 1 + x + x^2 + ... + x^n
 int sum_series_iterative(int x, int n) {
     int sum = 0;
-    int term = 1;   // x^0 = 1
+    int term = 1;   
 
     for (int i = 0; i <= n; i++) {
-        sum += term;      // add current power of x
-        term *= x;        // move to next power
+        sum += term;      
+        term *= x;       
     }
 
     return sum;
@@ -23,7 +21,7 @@ int main() {
 
     int result = sum_series_iterative(x, n);
 
-    printf("Sum of series 1 + x + x^2 + ... + x^%d = %lld\n", n, result);
+    printf("Sum of series 1 + x + x^2 + ... + x^%d = %d\n", n, result);
 
     return 0;
 }
