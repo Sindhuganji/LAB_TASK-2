@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h>
 int gp_sum_recursive(int x, int n) {
     if (n == 0) {   
         return 1;   
